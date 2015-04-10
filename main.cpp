@@ -156,6 +156,8 @@ Mat findQueryDescriptors(string queryImageName)
 
 int main()
 {
+    //chiamo saveTrainDescriptors per debug, in realtà lo chiamo fuori dall'applicazione,
+    //e leggo direttamente il file yml contenente i descrittori    
     saveTrainDescriptors();
 
     Ptr<DescriptorMatcher> descriptorMatcher;
